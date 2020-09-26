@@ -25,3 +25,13 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## Project Description
+This Fornt-End application was developed to help the users to fetch the lists and browse all launches by spacex program.
+
+## Functionalities
+* user is able to filter the data with the help of provided filters.
+* Applied change the filter and uodate the page with all the latest records without reloding/refreshing the page.
+* Responsive UI easy to view in any device.
+
+
