@@ -15,8 +15,26 @@
   //   line-height: 24px;
   //   max-width: 300px;
   // }
+
+  .card{
+    border-radius: 15px !important;
+    margin-bottom: 1.5rem !important;
+  }
+  .card-img-top{
+    padding:10px !important;
+  }
   .card-title{
     margin-left: 5px;
+    color: #4e42f0;
+  }
+
+  .h2custom{
+    padding-left: 10px;
+  }
+ 
+
+  .labeld{
+    font-weight: bold;
   }
   .background{
     background-color: #f5f7fa;
@@ -47,7 +65,9 @@
   }
 
  .headr5{
-  border-bottom: thin;
+  border-bottom: 1px solid black;
+  margin: 10px;
+
   }
  
   /* Clear floats after the columns */
