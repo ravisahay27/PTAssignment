@@ -1,0 +1,84 @@
+<div class="background">
+    <h3>Spacex Launch Programs</h3>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="row">
+                <div class="col-md-2 ">
+                    <div class="card">
+                        <h3 class="card-title">Filters</h3>
+                        <div class="card-body">
+                            <div class="row">
+                                <h5 class="headr5">Launch year</h5>
+                                <br>
+                                <div class="container">
+                                    <div class="row">
+                                        <div *ngFor="let year of launchYear">
+                                            <div class="col-md">
+                                                <button type="button" class="btn  inactive btn-success btn-sm btnyear "
+                                                    (click)="getlaunchyear(year)">{{year}}</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h5>Successful Launch</h5>
+                                <div class="container">
+                                    <div class="row">
+                                        <div *ngFor="let launch of successfulLaunch">
+                                            <div class="col-md">
+                                                <button type="button" class="btn btn-success btn-sm inactive btnlaunch"
+                                                (click)="getLaunchSuccessfilter(launch)">{{launch}}</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                               
+                                <h5>Successful Landing</h5>
+                            
+                                <div class="container">
+                                    <div class="row">
+                                        <div *ngFor="let item of successfulLanding">
+                                            <div class="col-md">
+                                                <button type="button" class="btn btn-success btn-sm inactive btnland"
+                                                (click)="getLandsuccess(item)">{{item}}</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-10">
+                    <div class="row">
+                        <div *ngFor="let item of spacexData">
+
+                            <div class="col-md-2">
+                                <div class="card" style="width: 18rem;">
+                                    <img class="card-img-top" alt="Card image cap"
+                                        src={{item.links.mission_patch_small}}>
+                                    <div class="card-body">
+                                        <h5 class="card-title">{{item.mission_name}} #{{item.flight_number}}</h5>
+                                        <label>Mission Ids: </label>
+                                        <span *ngFor="let mission of" {{item.mission_id}}>
+                                            <li>{{mission}}</li>
+                                        </span>
+                                        <label>Launch Year :</label> {{item.launch_year}}
+                                        <label>Successful Launch:</label> {{item.launch_success}}
+                                        <label>Successful
+                                            Landing:</label>{{item.rocket.first_stage.cores[0].land_success}}
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <footer> Developed By: Ravi Sahay</footer>
+
+</div>
