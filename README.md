@@ -67,6 +67,10 @@ mastermethod() {
   ```
   Above method can be found in app/service/external.service.ts .
   
+  
+  ## Deployment
+  Application is deployed and hosted on Heroku. Heroku deployment is automatically linked to the Github with CI and CD on heroku server which means every commit on     master of Github will deploy the fresh build on Heroku.
+You can access the hosted app at - https://ptxt.herokuapp.com/ 
 
 ## Further help
 
