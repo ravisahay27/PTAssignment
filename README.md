@@ -39,7 +39,8 @@ This Fornt-End application was developed to help the users to fetch the lists an
 It uses the SpaceX API in the backend to fetch the records and using that the view gets updated. Application also has the capability to append the multiple filter criteria while filtering the records.
 It has the Service directory which contains the service file of anguler in whic all HTTP request has been written down.
 MasterMethod -
-`  mastermethod() {
+``` 
+mastermethod() {
     var whereclause = "";
     if (this.selectedLaunchYear != undefined) {
       whereclause = "&launch_year=" + this.selectedLaunchYear;
@@ -53,23 +54,27 @@ MasterMethod -
     this.externalService.getfilterdata(whereclause).subscribe(records => {
       this.spacexData = records
     })
-  }`
+  }
+  ```
   
   It manages all the Fileter query.
   
   ## Making request to Backend API
   * Method used to fetch default record's at the time of page load.
-  `getSpacexInfo(){
+  ```
+  getSpacexInfo(){
   .
   .
-  }`
+  }
+  ```
   
   * Method used to fetch the filtered data
-  `getfilterdata(params){
+  ```
+  getfilterdata(params){
   .
   .
-  }`
-  
+  }
+  ```
   Above method can be found in app/service/external.service.ts .
   
 
