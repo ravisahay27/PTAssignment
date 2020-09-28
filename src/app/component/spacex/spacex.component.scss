@@ -1,31 +1,26 @@
 
-  // .card {
-  //   border-radius: 4px;
-  //   border: 1px solid #eee;
-  //   background-color: #fafafa;
-  //   height: 40px;
-  //  // width: 50px;
-  //   margin: 0 8px 16px;
-  //   padding: 16px;
-  //   display: flex;
-  //   flex-direction: row;
-  //   justify-content: center;
-  //   align-items: center;
-  //   transition: all 0.2s ease-in-out;
-  //   line-height: 24px;
-  //   max-width: 300px;
-  // }
-
   .card{
     border-radius: 15px !important;
     margin-bottom: 1.5rem !important;
+    transition: 0.2s;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  
   }
   .card-img-top{
     padding:10px !important;
+    background-color: #f5f5f5;
+
   }
   .card-title{
     margin-left: 5px;
     color: #4e42f0;
+  }
+  .filtertitle{
+    padding-top: 0px;
+    margin-bottom: 0px;
+  }
+  .filterbody{
+    padding-top: 0px;
   }
 
   .h2custom{
@@ -47,7 +42,12 @@
     opacity: 0.6;
     transition: 0.3s;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  
+  width: 100%;
+  }
 
+  .btn:hover{
+    opacity: 1;
   }
 
   .btnyear:focus{

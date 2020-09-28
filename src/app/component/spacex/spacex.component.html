@@ -5,8 +5,8 @@
             <div class="row">
                 <div class="col-md-2 ">
                     <div class="card">
-                        <h3 class="card-title">Filters</h3>
-                        <div class="card-body">
+                        <h3 class="card-title filtertitle">Filters</h3>
+                        <div class="card-body filterbody">
                             <div class="row">
                                 <h5 class="headr5">Launch year</h5>
                                 <br>
@@ -26,20 +26,20 @@
                                         <div *ngFor="let launch of successfulLaunch">
                                             <div class="col-md">
                                                 <button type="button" class="btn btn-success btn-sm inactive btnlaunch"
-                                                (click)="getLaunchSuccessfilter(launch)">{{launch}}</button>
+                                                    (click)="getLaunchSuccessfilter(launch)">{{launch}}</button>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                               
-                                <h5  class="headr5">Successful Landing</h5>
-                            
+
+                                <h5 class="headr5">Successful Landing</h5>
+
                                 <div class="container">
                                     <div class="row">
                                         <div *ngFor="let item of successfulLanding">
                                             <div class="col-md">
                                                 <button type="button" class="btn btn-success btn-sm inactive btnland"
-                                                (click)="getLandsuccess(item)">{{item}}</button>
+                                                    (click)="getLandsuccess(item)">{{item}}</button>
                                             </div>
                                         </div>
                                     </div>
@@ -48,17 +48,16 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col-md-10">
                     <div class="row">
                         <div *ngFor="let item of spacexData">
-
-                            <div class="col-md-2">
-                                <div class="card" style="width: 18rem;">
+                            <div class=" col-lg-4 col-md-3 col-sm-12">
+                                <div class="card" style="width: 15rem; ">
                                     <img class="card-img-top" alt="Card image cap"
                                         src={{item.links.mission_patch_small}}>
                                     <div class="card-body">
-                                        <h5 class="card-title customtitle">{{item.mission_name}} #{{item.flight_number}}</h5>
+                                        <h5 class="card-title customtitle">{{item.mission_name}}
+                                            #{{item.flight_number}}</h5>
                                         <label class="labeld">Mission Ids: </label>
                                         <span *ngFor="let mission of" {{item.mission_id}}>
                                             <li>{{mission}}</li>
@@ -70,16 +69,17 @@
                                             Landing:</label>{{item.rocket.first_stage.cores[0].land_success}}
 
                                     </div>
-
                                 </div>
+
                             </div>
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
 
     </div>
-    <footer> Developed By: Ravi Sahay</footer>
+    <footer style="font-weight: 500;"> Developed By: Ravi Sahay</footer>
 
 </div>
